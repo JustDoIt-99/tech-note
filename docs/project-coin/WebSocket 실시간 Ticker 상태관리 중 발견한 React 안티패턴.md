@@ -154,3 +154,7 @@ const handleTickerMessage = useCallback((data: any) => {
     prevPriceRef.current[data.code] = nextPrice;
 }, []);
 ```
+
+## 정리
+updater function 내부에서 다른 state를 변경하는 side effect를 실행하면 예기치 못한 동작이 발생할 수 있습니다.  
+React 공식 문서에서 권장하는 것처럼 updater function은 이전 상태를 기반으로 다음 상태만 계산하는 순수 함수로 유지하는 것이 중요합니다.
