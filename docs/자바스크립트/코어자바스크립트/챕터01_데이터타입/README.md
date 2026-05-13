@@ -5,7 +5,7 @@
 - 참조형 : 객체(object) - 배열(array), 함수(function), 날짜(Date), 정규표현식(RegExp), Map, WeakMap, Set, WeakSet
 
 <p align="center">
-  <img src="img.png" width="400"/>
+  <img src="이미지/img.png" width="400"/>
 </p>
 
 - 기본형은 값이 담긴 **주솟값을 바로 복제**하지만 참조형은 값이 담긴 **주솟값들로 이루어진 묶음을 가리키는 주솟값**을 복제한다.
