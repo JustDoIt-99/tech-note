@@ -1,5 +1,4 @@
 function solution(n, words) {
-    var answer = [];
     let wordSet = new Set();
 
     wordSet.add(words[0]);
