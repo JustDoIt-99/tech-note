@@ -1,6 +1,6 @@
 ## 들어가며
 
-![img.png](img.png)
+![img.png](images/img.png)
 
 Upbit WebSocket API를 활용하여 현재가, 전일 대비, 거래대금 데이터를 실시간으로 업데이트하는 기능을 구현하고 PR을 날린 후gemini-code-assist에게 코드 리뷰로 받은 멘트입니다.  
 
@@ -40,7 +40,7 @@ const handleTickerMessage = useCallback((data: any) => {
 
 React 공식 문서에 작성된 내용은 아래와 같습니다.
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 이벤트 핸들러가 모두 실행된 후, React는 다시 렌더링을 수행합니다. 다시 렌더링하는 동안 React는 state 업데이트 queue를 처리합니다. updater function은 렌더링 과정 중 실행되기 때문에 반드시 순수 함수여야 하며 결과만 반환해야 합니다. updater function 내부에서 다른 state를 변경하거나 다른 부수 효과를 실행하려고 하지 마세요.
 
