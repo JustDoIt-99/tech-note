@@ -58,4 +58,18 @@ chart.timeScale().setVisibleLogicalRange({
 이 방법을 통해 과거 데이터를 불러오더라도 사용자가 보고 있던 위치가 자연스럽게 유지되도록 개선했습니다.  
 
 ## 결과
+**변경 전**  
+
+https://github.com/user-attachments/assets/b4308035-cc72-4945-9a36-05f4c6ab6d78
+
+https://github.com/user-attachments/assets/ccd9c567-7d24-4d69-9227-0f85bc1c6792
+
+---
+
+**변경 후**
+
+https://github.com/user-attachments/assets/77a533dd-44f5-4ed8-893a-de20015ac694
+
+
+
 
