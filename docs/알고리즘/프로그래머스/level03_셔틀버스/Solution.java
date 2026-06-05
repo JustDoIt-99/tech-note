@@ -14,7 +14,7 @@ class Solution {
             while (seat > 0 && crewIdx < timetable.length) {
                 int crewTime = toMinute(timetable[crewIdx]);
 
-                if (crewTime <= busTime) {
+                if (crewTime <= busTime) { // 탈 수 있어?
                     lastCrewTime = crewTime;
                     crewIdx++;
                     seat--;
@@ -23,12 +23,12 @@ class Solution {
                 }
             }
 
-            if (i == n - 1) {
-                if (seat > 0) {
+            if (i == n - 1) { // 마지막 버스
+                if (seat > 0) { // 남은 자리 있아?
                     return toTimeString(busTime);
                 }
 
-                return toTimeString(lastCrewTime - 1);
+                return toTimeString(lastCrewTime - 1); // 남은 자리 없어
             }
 
             busTime += t;
@@ -49,3 +49,5 @@ class Solution {
         return String.format("%02d:%02d", time / 60, time % 60);
     }
 }
+
+// 단위를 통일해서 문제를 푸는것이 빠르다.
