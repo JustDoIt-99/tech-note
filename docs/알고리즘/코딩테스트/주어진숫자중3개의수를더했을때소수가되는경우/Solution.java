@@ -27,7 +27,7 @@ class Solution {
     }
 
     private boolean isPrime(int num) {
-        if(num < 2) return true;
+        if(num < 2) return true; // 여기는 false이다. true가 아니다.
 
         for(int i = 2; i * i <= num; i++) {
             if(num % i == 0) {
